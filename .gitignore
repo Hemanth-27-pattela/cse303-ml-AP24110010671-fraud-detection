@@ -1,0 +1,59 @@
+# ==============================================================================
+# CSE303 Capstone: Explainable & Cost-Sensitive Fraud Detection
+# .gitignore: Ignores virtual environments, raw/processed data, models, and cache
+# ==============================================================================
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Jupyter Notebook Checkpoints & Cache (allows .ipynb in notebooks/ to be committed)
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE and Editor Specific Folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dataset Files (Raw, Processed, and Compressed Archives)
+# Kept local due to large size and competition distribution terms
+*.csv
+*.tsv
+*.zip
+*.tar.gz
+*.7z
+*.rar
+*.parquet
+*.feather
+
+# Data Directory Contents (preserve folder structure via .gitkeep)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Saved Models & Artifacts
+models/
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.onnx
+
+# Logs and Temporary Output
+*.log
+scratch/
+tmp/
+.temp/
